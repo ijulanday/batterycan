@@ -9,4 +9,4 @@
 extern CAN_message_t battery_message;
 
 void printRawBat(CAN_message_t battery_message);
-void readAllCellVoltage(uint8_t packId, FlexCAN_T4<CAN1, RX_SIZE_256, TX_SIZE_16> *can);
+CAN_message_t readAllCellVoltage(uint8_t packId);
